@@ -21,6 +21,13 @@ public class AdminMain {
         System.out.println("2- View Additions");
         System.out.println("3- Add New Item To Menu");
         System.out.println("3- Add new Addition");
+
+        menu.addSandwich(chickenBurger);
+        menu.addSandwich(cheeseBurger);
+        menu.addAddition(mayonnaise);
+        menu.addAddition(tomatoes);
+        menu.addAddition(cheese);
+
         int i=scanner.nextInt();
         if (i == 1) {
             menu.viewMenu();
@@ -31,11 +38,7 @@ public class AdminMain {
         } else if (i == 4) {
             menu.addAddition(catchup);
         }
-        menu.addSandwich(chickenBurger);
-        menu.addSandwich(cheeseBurger);
-        menu.addAddition(mayonnaise);
-        menu.addAddition(tomatoes);
-        menu.addAddition(cheese);
+
 
     }
 }
