@@ -6,9 +6,10 @@ public class AdminMain {
 
     public static void getAdminFeature(int input,Menu menu){
         AdminFeatures viewMenu = AdminFeatures.VIEW_MENU;
-        switch (input){
-            case viewMenu -> {
-            }
+        switch (viewMenu){
+            case VIEW_MENU -> menu.viewMenu();
+            case VIEW_ADDITIONS -> menu.getAdditionsList();
+//            case ADD_NEW_ITEM -> menu.addSandwich();
         }
     }
     public static void main(String[] args) {
