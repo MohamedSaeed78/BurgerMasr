@@ -3,6 +3,14 @@ import app.*;
 import java.util.Scanner;
 
 public class AdminMain {
+
+    public static void getAdminFeature(int input,Menu menu){
+        AdminFeatures viewMenu = AdminFeatures.VIEW_MENU;
+        switch (input){
+            case viewMenu -> {
+            }
+        }
+    }
     public static void main(String[] args) {
         //creating instance of Menu
         Menu menu = Menu.getInstance();
@@ -40,5 +48,20 @@ public class AdminMain {
         }
 
 
+    }
+    public enum AdminFeatures {
+        VIEW_MENU(1),
+        VIEW_ADDITIONS(2),
+        ADD_NEW_ITEM(3),
+        ADD_NEW_ADDITION(4);
+        int val;
+
+        AdminFeatures(int val) {
+            this.val = val;
+        }
+
+        public int getVal() {
+            return val;
+        }
     }
 }
