@@ -13,8 +13,6 @@ public class Receipt {
 
 
     public void addItemsToReceipt(Sandwich sandwich) {
-        //as for sandwich or addition to be added to recite with protection using instance of to check the object before adding the object.
-
         receiptListFinal.add(sandwich);
 
     }
