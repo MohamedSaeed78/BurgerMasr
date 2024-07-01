@@ -8,8 +8,16 @@ public class Order {
     4- cancel order (id of the order as parameter)
     id (counter) admin controlled
     db -- it will be hashmap with id as key.
-
-
      */
+    private Integer iD = 0;
+    private DataBase dataBase;
+    private Menu menu;
 
+
+
+    public void requestOrder(){
+        menu.getInstance();
+        iD +=1;
+        menu.viewMenu();
+    }
 }
