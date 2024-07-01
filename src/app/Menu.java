@@ -44,11 +44,7 @@ public class Menu {
     }
 
     public void viewMenu() {
-//        int count=1;
-//        for (Sandwich sandwich:sandwichList){
-//            System.out.println(count + "." + sandwich.name);
-//            count++;
-//        }
+
         for (int i = 0; i < dataBase.getSandwichList().size(); i++) {
             System.out.println((i + 1) + "." + dataBase.getAdditionsList().get(i).getName());
         }

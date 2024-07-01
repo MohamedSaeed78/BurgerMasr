@@ -12,11 +12,14 @@ public class Order {
     private Integer iD = 0;
     private DataBase dataBase;
     private Menu menu;
+    private Receipt receipt;
+
+    public Order(){
+        receipt = new Receipt();
+    }
+
+    public void requestOrder(int sandwichQuantity, Sandwich sandwich) {
 
 
-    public void requestOrder() {
-        menu.getInstance();
-        iD += 1;
-        menu.viewMenu();
     }
 }
