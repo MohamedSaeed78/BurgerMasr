@@ -14,10 +14,9 @@ public class Order {
     private Menu menu;
 
 
-
-    public void requestOrder(){
+    public void requestOrder() {
         menu.getInstance();
-        iD +=1;
+        iD += 1;
         menu.viewMenu();
     }
 }

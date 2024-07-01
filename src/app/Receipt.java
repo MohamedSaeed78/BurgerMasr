@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class Receipt {
-    private ArrayList <Sandwich> receiptListFinal ;
+    private ArrayList<Sandwich> receiptListFinal;
 
     public Receipt() {
         receiptListFinal = DataBase.getInstance().getReceiptListFinal();
